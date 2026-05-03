@@ -4,7 +4,6 @@ import java.util.*;
 
 public class GradeTracker {
 
-    // 🔹 Student class inside same file
     static class Student {
         String name;
         int marks;
@@ -16,23 +15,22 @@ public class GradeTracker {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner st = new Scanner(System.in);
         ArrayList<Student> students = new ArrayList<>();
 
         System.out.print("Enter number of students: ");
-        int n = sc.nextInt();
+        int n = st.nextInt();
 
         for (int i = 0; i < n; i++) {
             System.out.print("Name: ");
-            String name = sc.next();
+            String name = st.next();
 
             System.out.print("Marks: ");
-            int marks = sc.nextInt();
+            int marks = st.nextInt();
 
             students.add(new Student(name, marks));
         }
 
-        // Report
         int sum = 0, max = students.get(0).marks, min = students.get(0).marks;
 
         for (Student s : students) {
