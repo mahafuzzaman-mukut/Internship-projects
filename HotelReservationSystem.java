@@ -14,10 +14,8 @@ class Room {
         this.customerName = "";
     }
 }
-
 public class Main {
-
-    static Room findRoom(ArrayList<Room> rooms, int roomNo) {
+   static Room findRoom(ArrayList<Room> rooms, int roomNo) {
         for (Room room : rooms) {
             if (room.roomNumber == roomNo) {
                 return room;
@@ -25,9 +23,8 @@ public class Main {
         }
         return null;
     }
-
-    static void viewRooms(ArrayList<Room> rooms) {
-        System.out.println("\n===== ROOM LIST =====");
+  static void viewRooms(ArrayList<Room> rooms) {
+        System.out.println(" ROOM LIST: ");
         for (Room room : rooms) {
             String status = room.available ? "Available" : "Booked";
             System.out.println(
@@ -85,8 +82,7 @@ public class Main {
             System.out.println("Reservation Cancelled!");
         }
     }
-
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<Room> rooms = new ArrayList<>();
@@ -98,7 +94,7 @@ public class Main {
         int choice = 0; 
 
         do {
-            System.out.println("\n===== HOTEL RESERVATION SYSTEM =====");
+            System.out.println(" HOTEL RESERVATION SYSTEM: ");
             System.out.println("1. View Rooms");
             System.out.println("2. Book Room");
             System.out.println("3. Cancel Reservation");
