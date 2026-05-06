@@ -3,8 +3,7 @@ package bd.mukut.gradetracker;
 import java.util.*;
 
 public class GradeTracker {
-
-    static class Student {
+   static class Student {
         String name;
         int marks;
 
@@ -13,8 +12,7 @@ public class GradeTracker {
             this.marks = marks;
         }
     }
-
-    public static void main(String[] args) {
+public static void main(String[] args) {
         Scanner st = new Scanner(System.in);
         ArrayList<Student> students = new ArrayList<>();
 
@@ -41,7 +39,7 @@ public class GradeTracker {
 
         double avg = (double) sum / students.size();
 
-        System.out.println("\n--- Report ---");
+        System.out.println(" Report: ");
         for (Student s : students) {
             System.out.println(s.name + " : " + s.marks);
         }
