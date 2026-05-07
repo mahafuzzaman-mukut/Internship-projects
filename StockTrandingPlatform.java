@@ -44,12 +44,14 @@ public void addStock(String symbol, int quantity) {
     holdings.put(symbol,
         holdings.getOrDefault(symbol,0)+quantity); 
 } 
+    
 public void removeStock(String symbol, int quantity) {
 
     int current = holdings.getOrDefault(symbol, 0);
     if (current <= quantity) {
     holdings.remove(symbol);
 } 
+        
 else {
     holdings.put(symbol, current - quantity);
 }
