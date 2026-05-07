@@ -17,7 +17,6 @@ public void setPrice(double price){
         this.price = price;
     }
 } 
-
 class Transaction {
     private String type;
     private String symbol;
