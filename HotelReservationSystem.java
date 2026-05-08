@@ -27,11 +27,10 @@ public class Main {
         System.out.println(" ROOM LIST: ");
         for (Room room : rooms) {
             String status = room.available ? "Available" : "Booked";
-            System.out.println(
+            System.out.println (
                 "Room No: " + room.roomNumber +
                 " | Category: " + room.category +
-                " | Status: " + status +
-                (room.available ? "" : " | Customer: " + room.customerName)
+                " | Status: " + status + (room.available ? "" : " | Customer: " + room.customerName)
             );
         }
     }
