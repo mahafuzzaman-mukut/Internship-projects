@@ -7,7 +7,7 @@ class Room {
     boolean available;
     String customerName;
 
-Room(int roomNumber, String category) {
+  Room(int roomNumber, String category) {
         this.roomNumber = roomNumber;
         this.category = category;
         this.available = true;
