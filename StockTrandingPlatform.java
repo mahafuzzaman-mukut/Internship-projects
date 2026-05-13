@@ -3,7 +3,7 @@ import java.util.*;
 class Stock {
     private String symbol;
     private double price;
-Stock(String symbol, double price) {
+   Stock(String symbol, double price) {
         this.symbol = symbol;
         this.price = price;
     }
