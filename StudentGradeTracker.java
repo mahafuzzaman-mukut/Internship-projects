@@ -10,6 +10,7 @@ Student(String name, int marks) {
             this.marks = marks;
         }
     }
+   
 public static void main(String[] args) {
         Scanner st = new Scanner(System.in);
         ArrayList<Student> students = new ArrayList<>();
