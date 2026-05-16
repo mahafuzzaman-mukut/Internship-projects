@@ -7,7 +7,7 @@ class Room {
     boolean available;
     String customerName;
 
-  Room(int roomNumber, String category) {
+Room(int roomNumber, String category) {
         this.roomNumber = roomNumber;
         this.category = category;
         this.available = true;
@@ -34,7 +34,7 @@ static void viewRooms(ArrayList<Room> rooms) {
             );
         }
     }
-    static void bookRoom(ArrayList<Room> rooms, Scanner sc) {
+static void bookRoom(ArrayList<Room> rooms, Scanner sc) {
         System.out.print("Enter Room Number: ");
         if (!sc.hasNextInt()) {
             System.out.println("Invalid input!");
@@ -60,7 +60,7 @@ static void viewRooms(ArrayList<Room> rooms) {
             System.out.println("Room Booked Successfully!");
         }
     }
-    static void cancelRoom(ArrayList<Room> rooms, Scanner sc) {
+static void cancelRoom(ArrayList<Room> rooms, Scanner sc) {
         System.out.print("Enter Room Number: ");
         if (!sc.hasNextInt()) {
             System.out.println("Invalid input!");
