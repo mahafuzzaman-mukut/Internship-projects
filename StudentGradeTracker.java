@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class GradeTracker {
@@ -45,6 +46,6 @@ public static void main(String[] args) {
 
         System.out.println("Average: " + avg);
         System.out.println("Highest: " + max);
-        System.out.println("Lowest: " + min);
+        System.out.print("Lowest: " + min);
     }
 }
