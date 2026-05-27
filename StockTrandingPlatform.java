@@ -144,8 +144,8 @@ public class Main {
         market.put("AAPL", new Stock("AAPL", 150));
 
         market.put("GOOG", new Stock("GOOG", 2800));
-
         User user = new User(10000);
+
 
         user.buyStock("AAPL", 10, market);
 
