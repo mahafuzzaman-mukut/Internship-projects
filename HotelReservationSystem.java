@@ -7,13 +7,14 @@ class Room {
     boolean available;
     String customerName;
 
-Room(int roomNumber, String category) {
+ Room(int roomNumber, String category) {
         this.roomNumber = roomNumber;
         this.category = category;
         this.available = true;
         this.customerName = "";
     }
 }
+
 public class Main {
    static Room findRoom(ArrayList<Room> rooms, int roomNo) {
         for (Room room : rooms) {
@@ -84,12 +85,11 @@ static void cancelRoom(ArrayList<Room> rooms, Scanner sc) {
 public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        ArrayList<Room> rooms = new ArrayList<>();
-      
-        rooms.add(new Room(101, "Standard"));
+        ArrayList<Room> rooms = new ArrayList<>();      
+
+    rooms.add(new Room(101, "Standard"));
         rooms.add(new Room(102, "Deluxe"));
         rooms.add(new Room(103, "Suite"));
-
         int choice = 0; 
 
         do {
