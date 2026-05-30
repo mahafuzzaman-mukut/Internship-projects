@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 class Stock {
     String symbol;
     double price;
